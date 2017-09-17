@@ -78,7 +78,7 @@ gulp.task('style:build', function () {
         .pipe(sourcemaps.init())
         .pipe(sass())
         .pipe(prefixer({
-            browser: ['last 3 version', "> 1%", "ie 8", "ie 7"]
+            browsers: ['last 3 version', "> 1%", "ie 8", "ie 7"]
             }))
         .pipe(cssmin())
         .pipe(sourcemaps.write())
